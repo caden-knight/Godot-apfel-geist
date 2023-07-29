@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1690642751
+icon.svg::CompressedTexture2D::1783404266111600935::1690496988::1690496994::1::::<><>::
+::res://assets/::1690670332
+::res://assets/maps/::1690670335
+clue-map-placeholder.jpg::CompressedTexture2D::5310790176640512046::1690670335::1690670339::1::::<><>::
+::res://assets/sprites/::1690498614
+apfel-geist.png::CompressedTexture2D::370944291953823424::1690497289::1690498614::1::::<><>::
+::res://scenes/::1690667335
+apfel_geist.tscn::PackedScene::430692283201056958::1690667335::0::1::::<><>::res://scripts/apfel_geist.gd<>uid://fjxnsorcclrc::::res://assets/sprites/apfel-geist.png
+level_1.tscn::PackedScene::8829341515453676543::1690667335::0::1::::<><>::uid://gevo6pv71iwc::::res://scenes/apfel_geist.tscn
+::res://scripts/::1690643037
+apfel_geist.gd::GDScript::-1::1690643037::0::1::::<>CharacterBody2D<>::
