@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dgbxpwyv0e580"]
+[gd_scene load_steps=8 format=3 uid="uid://dgbxpwyv0e580"]
 
 [ext_resource type="Texture2D" uid="uid://chwt65ww4p0ra" path="res://assets/maps/clue-map-placeholder.jpg" id="1_0yktn"]
 
@@ -16,6 +16,10 @@ size = Vector2(2048, 63)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qj4p0"]
 size = Vector2(444, 29)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bechy"]
+radius = 57.0
+height = 296.0
 
 [node name="Background" type="TextureRect"]
 offset_left = 2.0
@@ -78,3 +82,12 @@ shape = SubResource("RectangleShape2D_s3p1n")
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="BottomBorder"]
 position = Vector2(1022, 1964.5)
 shape = SubResource("RectangleShape2D_qj4p0")
+
+[node name="DiningRoom" type="StaticBody2D" parent="."]
+position = Vector2(372, 1032)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DiningRoom"]
+position = Vector2(0, -2)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_bechy")
