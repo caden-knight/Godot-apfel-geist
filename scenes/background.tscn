@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=3 uid="uid://dgbxpwyv0e580"]
+
+[ext_resource type="Texture2D" uid="uid://chwt65ww4p0ra" path="res://assets/maps/clue-map-placeholder.jpg" id="1_0yktn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wt3q1"]
+size = Vector2(712, 31.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bfx7e"]
+size = Vector2(28.25, 86)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uk01y"]
+size = Vector2(85, 114)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s3p1n"]
+size = Vector2(2048, 63)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qj4p0"]
+size = Vector2(444, 29)
+
+[node name="Background" type="TextureRect"]
+offset_left = 2.0
+offset_right = 2050.0
+offset_bottom = 2048.0
+texture = ExtResource("1_0yktn")
+
+[node name="TopBorder" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopBorder"]
+position = Vector2(1023, 19.125)
+shape = SubResource("RectangleShape2D_wt3q1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TopBorder"]
+position = Vector2(403, 102)
+shape = SubResource("RectangleShape2D_wt3q1")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="TopBorder"]
+position = Vector2(1619, 98)
+shape = SubResource("RectangleShape2D_wt3q1")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="TopBorder"]
+position = Vector2(772, 75)
+shape = SubResource("RectangleShape2D_bfx7e")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="TopBorder"]
+position = Vector2(882, 61)
+shape = SubResource("RectangleShape2D_bfx7e")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="TopBorder"]
+position = Vector2(1160, 57)
+shape = SubResource("RectangleShape2D_bfx7e")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="TopBorder"]
+position = Vector2(1270, 66)
+shape = SubResource("RectangleShape2D_bfx7e")
+
+[node name="BottomBorder" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="BottomBorder"]
+position = Vector2(585, 1956)
+shape = SubResource("RectangleShape2D_uk01y")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="BottomBorder"]
+position = Vector2(756, 1963)
+shape = SubResource("RectangleShape2D_uk01y")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="BottomBorder"]
+position = Vector2(1286, 1962)
+shape = SubResource("RectangleShape2D_uk01y")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="BottomBorder"]
+position = Vector2(1456, 1963)
+shape = SubResource("RectangleShape2D_uk01y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomBorder"]
+position = Vector2(1024, 2012.5)
+shape = SubResource("RectangleShape2D_s3p1n")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="BottomBorder"]
+position = Vector2(1022, 1964.5)
+shape = SubResource("RectangleShape2D_qj4p0")

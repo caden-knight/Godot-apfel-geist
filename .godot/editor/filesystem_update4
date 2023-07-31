@@ -3,3 +3,4 @@ res://scenes/apfel_geist.tscn
 res://scripts/game_manager.gd
 res://scenes/npc.tscn
 res://scripts/npc.gd
+res://scenes/background.tscn
