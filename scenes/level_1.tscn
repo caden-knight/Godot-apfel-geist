@@ -1,11 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://dx1872jtxddrj"]
 
 [ext_resource type="PackedScene" uid="uid://gevo6pv71iwc" path="res://scenes/apfel_geist.tscn" id="1_46mih"]
-[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_tn7gh"]
 [ext_resource type="Texture2D" uid="uid://chwt65ww4p0ra" path="res://assets/maps/clue-map-placeholder.jpg" id="2_r0vpb"]
+[ext_resource type="PackedScene" uid="uid://cx05hkidf6ycg" path="res://scenes/npc.tscn" id="3_xswc5"]
 
 [node name="Level1" type="Node2D"]
-script = ExtResource("1_tn7gh")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 2048.0
@@ -22,3 +21,6 @@ limit_top = 0
 limit_right = 2048
 limit_bottom = 2048
 editor_draw_limits = true
+
+[node name="NPC" parent="apfel_geist" instance=ExtResource("3_xswc5")]
+position = Vector2(-100, 0)

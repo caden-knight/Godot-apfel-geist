@@ -1,4 +1,4 @@
-res://scenes/apfel_geist.tscn
-res://scripts/apfel_geist.gd
 res://scenes/level_1.tscn
+res://scenes/apfel_geist.tscn
 res://scripts/game_manager.gd
+res://scenes/npc.tscn
