@@ -11,6 +11,12 @@ offset_right = 2048.0
 offset_bottom = 2048.0
 texture = ExtResource("2_r0vpb")
 
+[node name="NPC" parent="." node_paths=PackedStringArray("apfel_geist") instance=ExtResource("3_xswc5")]
+position = Vector2(144, 599)
+scale = Vector2(0.375, 0.375)
+apfel_geist = NodePath("../apfel_geist")
+y_follow_offset = 45.0
+
 [node name="apfel_geist" parent="." instance=ExtResource("1_46mih")]
 position = Vector2(219, 599)
 scale = Vector2(0.75, 0.75)
@@ -21,6 +27,3 @@ limit_top = 0
 limit_right = 2048
 limit_bottom = 2048
 editor_draw_limits = true
-
-[node name="NPC" parent="apfel_geist" instance=ExtResource("3_xswc5")]
-position = Vector2(-100, 0)
