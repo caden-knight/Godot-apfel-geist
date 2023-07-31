@@ -1,13 +1,19 @@
 extends CharacterBody2D
 
 @export var SPEED: float = 10000.0
-const GRAVITY: float = 100.0
 @onready var sprite := $Sprite2D
 @onready var sprite_size: Vector2 = sprite.get_rect().size
+
+const GRAVITY: float = 100.0
+
+func _ready():
+	# make ghost see through
+	sprite.modulate.a = 0.65
 
 func _physics_process(_delta):
 	process_movement(_delta)
 
+## Allows the player to move with either wasd or arrow keys
 func process_movement(delta):
 	if Input.is_action_pressed("ui_up"):
 		velocity.y = -SPEED * delta
