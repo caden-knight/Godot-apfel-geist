@@ -11,6 +11,7 @@ scale = Vector2(0.5, 0.5)
 script = ExtResource("1_4qpye")
 x_follow_offset = 50.0
 y_follow_offset = 25.0
+speed = null
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
