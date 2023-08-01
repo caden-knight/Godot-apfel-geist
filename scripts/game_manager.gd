@@ -9,14 +9,15 @@ func _ready():
 	game_setup()
 
 func game_setup():
+	# pick random murder scenario
 	var suspect: String = suspects.pick_random()
+	victims.erase(suspect) # erase suspect from victim list so suspect can't also be victim
 	var victim: String = victims.pick_random()
 	var location: String = locations.pick_random()
 	var weapon: String = weapons.pick_random()
 	
 	# remove the results from the arrays
 	suspects.erase(suspect)
-	victims.erase(suspect)
 	locations.erase(location)
 	weapons.erase(weapon)
 	
