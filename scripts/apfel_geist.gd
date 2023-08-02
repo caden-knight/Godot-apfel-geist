@@ -7,9 +7,8 @@ extends CharacterBody2D
 const GRAVITY: float = 100.0
 
 func _ready():
-	# make ghost see through
 	sprite.modulate.a = 0.65
-
+	
 func _physics_process(_delta):
 	process_movement(_delta)
 

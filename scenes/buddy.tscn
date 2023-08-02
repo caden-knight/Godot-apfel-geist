@@ -1,16 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://cx05hkidf6ycg"]
+[gd_scene load_steps=4 format=3 uid="uid://bflbq1a0efaqg"]
 
-[ext_resource type="Script" path="res://scripts/npc.gd" id="1_4qpye"]
+[ext_resource type="Script" path="res://scripts/buddy.gd" id="1_djubn"]
 [ext_resource type="Texture2D" uid="uid://5muwmliww66n" path="res://assets/sprites/weeping-ghost.png" id="2_lcjhe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nfg5f"]
 size = Vector2(128, 129)
 
-[node name="NPC" type="CharacterBody2D"]
+[node name="Buddy" type="CharacterBody2D"]
 scale = Vector2(0.5, 0.5)
-script = ExtResource("1_4qpye")
-x_follow_offset = 50.0
-y_follow_offset = 25.0
+script = ExtResource("1_djubn")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

@@ -5,10 +5,10 @@ extends CharacterBody2D
 @export var y_follow_offset: float
 @export var speed: float = 50
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if apfel_geist != null:
 		follow(apfel_geist)
-	
+
 # follows player using lerp and velocity
 func follow(character: CharacterBody2D):
 	if apfel_geist.get_child(0).flip_h:
@@ -25,4 +25,3 @@ func follow(character: CharacterBody2D):
 	velocity.x = lerp(position.y - character.position.y, 0.0, 0.4)
 	
 	move_and_slide()
-	

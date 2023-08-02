@@ -2,16 +2,17 @@
 
 [ext_resource type="PackedScene" uid="uid://gevo6pv71iwc" path="res://scenes/apfel_geist.tscn" id="1_46mih"]
 [ext_resource type="PackedScene" uid="uid://dgbxpwyv0e580" path="res://scenes/background.tscn" id="1_lve1s"]
-[ext_resource type="PackedScene" uid="uid://cx05hkidf6ycg" path="res://scenes/npc.tscn" id="3_xswc5"]
+[ext_resource type="PackedScene" uid="uid://bflbq1a0efaqg" path="res://scenes/buddy.tscn" id="3_xswc5"]
 
 [node name="Level1" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource("1_lve1s")]
 
-[node name="NPC" parent="." node_paths=PackedStringArray("apfel_geist") instance=ExtResource("3_xswc5")]
+[node name="Buddy" parent="." node_paths=PackedStringArray("apfel_geist") instance=ExtResource("3_xswc5")]
 position = Vector2(144, 599)
 scale = Vector2(0.375, 0.375)
 apfel_geist = NodePath("../apfel_geist")
+x_follow_offset = 50.0
 y_follow_offset = 45.0
 
 [node name="apfel_geist" parent="." instance=ExtResource("1_46mih")]
