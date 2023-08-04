@@ -1,9 +1,7 @@
 res://scenes/level_1.tscn
 res://scenes/apfel_geist.tscn
-res://scenes/npc.tscn
-res://scenes/background.tscn
-res://scripts/game_manager.gd
 res://scenes/buddy.tscn
-res://scripts/apfel_geist.gd
-res://scripts/npc.gd
-res://scripts/buddy.gd
+res://scenes/background.tscn
+res://scenes/notebook.tscn
+res://scenes/npc.tscn
+res://scenes/npc.gd
