@@ -2,6 +2,10 @@ extends Area2D
 
 @onready var clues
 
+var current_room: String = "Ballroom"
+var clue_given: bool = false
+
+
 func _process(_delta):
 	pass
 
@@ -12,10 +16,10 @@ func give_clue():
 	
 	var clue_string = "Hmmm. %s was with me"
 	var clue = clue_string % suspect_clue
+	clue_given = true
 	
 	print(clue)
 
 func _on_body_entered(body):
-	print(body.name + " body")
-	if body.name == "apfel_geist":
+	if body.name == "apfel_geist" && !clue_given:
 		give_clue()

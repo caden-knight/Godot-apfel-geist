@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var SPEED: float = 10000.0
+
 @onready var sprite := $Sprite2D
 @onready var sprite_size: Vector2 = sprite.get_rect().size
 
@@ -12,7 +13,7 @@ func _ready():
 func _physics_process(_delta):
 	process_movement(_delta)
 
-## Allows the player to move with either wasd or arrow keys
+# allows the player to move with either wasd or arrow keys
 func process_movement(delta):
 	if Input.is_action_pressed("ui_up"):
 		velocity.y = -SPEED * delta
