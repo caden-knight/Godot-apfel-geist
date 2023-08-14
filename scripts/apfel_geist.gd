@@ -32,3 +32,6 @@ func process_movement(delta):
 	velocity.y = lerp(velocity.y, 0.0, 0.1)
 	
 	move_and_slide()
+
+func make_guess() -> String:
+	return ""

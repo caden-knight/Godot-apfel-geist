@@ -29,4 +29,4 @@ limit_bottom = 2048
 editor_draw_limits = true
 
 [node name="NPC" parent="." instance=ExtResource("4_lchxi")]
-position = Vector2(1011, 392)
+position = Vector2(994, 361)
