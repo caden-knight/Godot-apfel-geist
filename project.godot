@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 GameManager="*res://scripts/game_manager.gd"
 
+[dotnet]
+
+project/assembly_name="Godot-apfel-geist"
+
 [input]
 
 ui_left={

@@ -1,6 +1,20 @@
 extends Node2D
 
-@export var suspects: Array[String] = ["Tyler", "Jax", "Caden", "Erin", "Gracie", "Stella", "Chris", "Dexter", "Max"]
+@export var suspects: Array[String] = [
+#	"Tyler", 
+#	"Jax", 
+	"Caden", 
+#	"Erin", 
+#	"Gracie", 
+#	"Stella", 
+#	"Chris", 
+#	"Dexter", 
+#	"Max", 
+	"Liam", 
+	"Leo", 
+	"Amani", 
+	"Cooper"
+	]
 enum Clue_Type {
 	VICTIM,
 	SUSPECT,
